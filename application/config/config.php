@@ -23,8 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/codeigniter_projects/codeigniter_api';
-
+$config['base_url'] = 'http://localhost/sample_codeigniter_api';
 /*
 |--------------------------------------------------------------------------
 | Index File

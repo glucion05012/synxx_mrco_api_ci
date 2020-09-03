@@ -5,61 +5,61 @@ class ApiController extends CI_Controller {
     //read all
     public function readall()
 	{
-		$data['customers'] = $this->mydb_model->readall_posts();
+		$data['login'] = $this->mydb_model->readall_posts();
 
-        if(empty($data['customers'])){
+        if(empty($data['login'])){
             show_404();
         }
 
-        echo json_encode($data['customers']);
+        echo json_encode($data['login']);
     }
     
     //read one
     public function read($id)
 	{
-		$data['customers'] = $this->mydb_model->read_posts($id);
+		$data['login'] = $this->mydb_model->read_posts($id);
 
-        if(empty($data['customers'])){
+        if(empty($data['login'])){
             show_404();
         }
 
-        echo json_encode($data['customers']);
+        echo json_encode($data['login']);
     }
     
     //create
     public function create()
 	{
-		$data['customers'] = $this->mydb_model->create_posts();
+		$data['login'] = $this->mydb_model->create_posts();
 
-        if(empty($data['customers'])){
+        if(empty($data['login'])){
             show_404();
         }
 
-        echo json_encode($data['customers']);
+        echo json_encode($data['login']);
     }
     
     //update
     public function update($id)
 	{
-		$data['customers'] = $this->mydb_model->update_posts($id);
+		$data['login'] = $this->mydb_model->update_posts($id);
 
-        if(empty($data['customers'])){
+        if(empty($data['login'])){
             show_404();
         }
         
-        echo json_encode($data['customers']);
+        echo json_encode($data['login']);
     }
     
     //delete
     public function delete($id)
 	{
-		$data['customers'] = $this->mydb_model->delete_posts($id);
+		$data['login'] = $this->mydb_model->delete_posts($id);
 
-        if(empty($data['customers'])){
+        if(empty($data['login'])){
             show_404();
         }
         
-        echo json_encode($data['customers']);
+        echo json_encode($data['login']);
 	}
 }
 
